@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+  <select id="opt" class="rounded border-2 border-blue text-blue-700 p-1 mb-10 mx-auto w-24 block text-sm my-10">
+    <option value="opt1"> First Option</option>
+    <option value="opt2">Second Option</option>
+    <option value="opt3">Third Option</option>
+  </select>
+  <button onclick="toggleME()" class="bg-blue-700 text-white px-2 rounded ml-2 mb-2">Click Here</button>
+  <div id="show">
+    <nav
+      class="md:flex justify-between items-center min-w-max font-semibold mx-2 bg-blue-700 p-2 md:px-28 text-white rounded">
+      <div class="flex justify-between items-center">
+        <a class="text-lg" href="">HAYKINS</a>
+        <span onclick="navigation()" class="md:hidden cursor-pointer"><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <ul id="menu" class="md:flex">
+        <li class="py-2 md:pl-10"><a href="">Home</a></li>
+        <li class="py-2 md:pl-10"><a href="">About</a></li>
+        <li class="py-2 md:pl-10"><a href="">Blog</a></li>
+        <li class="py-2 md:pl-10"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    function navigation() {
+      let menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function toggleME() {
+      let display = document.getElementById('show');
+      display.classList.toggle('hidden');
+    }
+  </script>
+  <script src="./font/RobotoCondensed-Regular.ttf"></script>
+  <script src="./icon/all.js"></script>
+</body>
+
+</html>

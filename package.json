@@ -1,0 +1,14 @@
+ {
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "i'm learning a javascript ",
+  "main": "operator.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Oyerinde Abel",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
